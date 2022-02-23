@@ -1,14 +1,76 @@
 html{
     --primary-color:rgb(17, 96, 102);
     --secondary-color:rgb(79, 102, 17);
+    
 }
 
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.main{
+    height: 100vh;
+    
+    background-image: url("./assets/main-bg.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+.name{
+    color:white;
+    z-index: 9999;
+    padding-top:14%;
+    padding-left:5%
+}
 
+nav{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.row{
+    width: 100%;
+    
+        display: flex;
+        justify-content: center;
+    
+}
+.column{
+  
+    
+    width: 25%;
+ 
+}
 
+@media screen and (max-width: 480px) {
+.column{
+    width: 100%;
+    float: none;
+}
+.row{
+    flex-direction: column;
+    /* display: ; */
+}
+}
+.food-card{
+    padding: 1em 2em;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #888888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.food-img{
+width: 200px;
+height: 200px;
+margin: 0 auto;
+}
+
+h1{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
 .container{
     width:100%;
+    
 }
 
-a{
-
-}
